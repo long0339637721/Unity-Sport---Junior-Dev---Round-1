@@ -1,0 +1,60 @@
+1. Thuật toán kiểm tra chuỗi đối xứng.
+
+Cho một chuỗi s, viết một thuật toán để kiểm tra xem chuỗi đó có phải là chuỗi đối xứng hay không. Một chuỗi đối xứng là chuỗi có thứ tự ký tự giống nhau 
+khi đọc từ trái sang phải và từ phải sang trái. Ví dụ: "radar" và "level" là các chuỗi đối xứng.
+
+Đầu Vào
+    Một chuỗi s chứa các ký tự chữ cái, chữ số và ký tự đặc biệt (0 ≤ độ dài của s ≤ 10^5).
+Đầu Ra
+    Trả về true nếu chuỗi s là chuỗi đối xứng, ngược lại trả về false.
+
+Ví Dụ
+    Ví Dụ 1:
+        Input: "level"
+        Output: true
+        Giải Thích: "level" đọc từ trái sang phải và từ phải sang trái đều giống nhau.
+    Ví Dụ 2:
+        Input: "hello"
+        Output: false
+        Giải Thích: "hello" không giống nhau khi đọc từ hai chiều.
+
+
+2. Bài toán Two Sum
+
+Mô Tả
+    Cho một mảng số nguyên nums và một số nguyên target, hãy tìm tất cả các cặp chỉ số của hai số trong mảng mà tổng của chúng bằng target. Giả định rằng có thể có nhiều cặp thỏa mãn điều kiện này, và bạn cần trả về tất cả các cặp chỉ số khác nhau.
+
+Đầu Vào
+    Một mảng số nguyên nums với độ dài n (1 ≤ n ≤ 10^4) chứa các số nguyên. Các số trong mảng có thể là số dương, số âm hoặc số không.
+    Một số nguyên target (−10^9 ≤ target ≤ 10^9) là tổng mà bạn cần tìm.
+Đầu Ra
+    Trả về một mảng hai chiều chứa tất cả các cặp chỉ số (i, j) (0 ≤ i < j < n) sao cho nums[i] + nums[j] == target.
+    Nếu không tìm thấy cặp nào, hãy trả về mảng rỗng.
+Điều Kiện
+    Không sử dụng cùng một phần tử hai lần để tạo thành tổng.
+    Các chỉ số trong các cặp trả về phải là duy nhất và không trùng lặp.
+    Thứ tự của các cặp trong kết quả không quan trọng.
+
+
+Ví Dụ
+    Ví Dụ 1:
+
+        Input:
+            nums = [2, 7, 11, 15]
+            target = 9
+        Output:
+            [[0, 1]]
+
+        Giải Thích: Bởi vì nums[0] + nums[1] == 2 + 7 == 9, trả về cặp chỉ số [0, 1].
+
+    Ví Dụ 2:
+
+        Input:
+            nums = [3, 2, 4, 3]
+            target = 6
+        Output:
+            [[1, 2], [0, 3]]
+            
+        Giải Thích: Cả hai cặp [2, 4] (tại chỉ số [1, 2]) và [3, 3] (tại chỉ số [0, 3]) đều có tổng bằng 6.
+
+3. Compress file data.json để đạt được file size là nhỏ nhất có thể
